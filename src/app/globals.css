@@ -1,0 +1,10 @@
+@import "tailwindcss";
+/* Use JS plugin for compatibility with Tailwind v4 PostCSS loader */
+@plugin "../../hero.ts";
+
+/* Ensure Tailwind scans your app files and HeroUI theme tokens */
+@source "../**/*.{js,jsx,ts,tsx,mdx}";
+@source "../../**/*.{js,jsx,ts,tsx,mdx}";
+@source "../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}";
+
+@custom-variant dark (&:is(.dark *));
