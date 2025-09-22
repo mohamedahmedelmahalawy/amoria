@@ -2,7 +2,8 @@ import { Navbar, NavbarBrand, NavbarContent } from "@heroui/navbar";
 import { Button } from "@heroui/button";
 import Link from "next/link";
 import React from "react";
-import { GiMatchTip } from "react-icons/gi";
+import { BsArrowThroughHeartFill } from "react-icons/bs";
+
 import NavLink from "./NavLink";
 
 function NavbarUi() {
@@ -20,7 +21,7 @@ function NavbarUi() {
       }}
     >
       <NavbarBrand as={Link} href="/">
-        <GiMatchTip size={40} className="text-[#FFDFA4]" />
+        <BsArrowThroughHeartFill size={40} className="text-[#FFDFA4]" />
         <div className="flex font-bold text-white text-3xl">
           <span>Amor</span>
           <span className="text-[#FFDFA4]">ia</span>

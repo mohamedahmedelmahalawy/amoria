@@ -18,7 +18,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <NavbarUi />
-          <main className="mx-auto p-10 container">{children}</main>
+          <main className="mx-auto container">{children}</main>
         </Providers>
       </body>
     </html>
